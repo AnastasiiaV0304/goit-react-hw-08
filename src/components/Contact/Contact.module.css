@@ -1,0 +1,25 @@
+.contactWrapper {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin-top: 15px;
+  padding: 8px;
+  width: 275px;
+}
+
+.userInfo {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 2px;
+}
+
+.button {
+  border: 2px solid grey;
+  border-radius: 4px;
+  padding: 8px;
+}
