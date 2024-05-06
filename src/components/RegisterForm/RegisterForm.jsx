@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { register } from "../../redux/auth/operations";
 import css from "./RegisterForm.module.css";
 
-export const RegistrationForm = () => {
+export const RegisterForm = () => {
   const dispatch = useDispatch();
 
   return (
@@ -38,7 +38,7 @@ export const RegistrationForm = () => {
             <ErrorMessage name="name" component="div" className={css.error} />
           </div>
           <div className={css.label}>
-            <label htmlFor="email">Email:</label>
+            <label htmlFor="email">E-mail:</label>
             <Field type="email" id="email" name="email" />
             <ErrorMessage name="email" component="div" className={css.error} />
           </div>

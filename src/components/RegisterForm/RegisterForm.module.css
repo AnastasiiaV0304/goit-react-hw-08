@@ -1,0 +1,58 @@
+.form {
+  width: 340px;
+  margin: 0 auto;
+  margin-top: 36px;
+  text-align: center;
+  font-size: 19px;
+}
+
+.label {
+  text-align: left;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.button {
+  min-width: 120px;
+  min-height: 60px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #4f69d1;
+  background: linear-gradient(
+    90deg,
+    rgb(129, 158, 230) 0%,
+    rgb(79, 131, 209) 100%
+  );
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79, 127, 209, 0.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+}
+
+.button:hover,
+.button:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+.error {
+  font-size: 14px;
+  color: rgb(187, 47, 8);
+}
+
+.title {
+  font-weight: 400;
+  font-size: 48px;
+  text-align: center;
+  font-style: normal;
+  text-shadow: 3px -4px 5px rgb(129, 158, 230);
+}
