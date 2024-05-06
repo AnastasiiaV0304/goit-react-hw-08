@@ -1,0 +1,25 @@
+.wrapperUserMenu {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.button {
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 1.3px;
+  font-weight: 500;
+  color: #313133;
+  border: 2px solid grey;
+  border-radius: 50px;
+  margin-right: 12px;
+}
+
+.button:hover {
+  background: #4f69d1;
+  background: linear-gradient(
+    90deg,
+    rgb(129, 158, 230) 0%,
+    rgb(79, 131, 209) 100%
+  );
+}

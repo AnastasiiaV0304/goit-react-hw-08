@@ -6,6 +6,7 @@
   border-radius: 4px;
   width: 350px;
   padding: 16px;
+  margin-bottom: 12px;
 }
 
 .input {
@@ -21,12 +22,16 @@
 }
 
 .button {
+  cursor: pointer;
   max-width: fit-content;
   margin-top: 10px;
-
   border: 2px solid grey;
   border-radius: 4px;
   padding: 8px;
+}
+
+.button:hover {
+  background-color: rgb(119, 141, 201);
 }
 
 .errorMessage {

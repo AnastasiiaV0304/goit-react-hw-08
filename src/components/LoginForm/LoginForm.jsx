@@ -28,7 +28,7 @@ export const LoginForm = () => {
     )
       .unwrap()
       .then(() => {
-        toast.success("Login ok");
+        toast.success("Login success");
         resetForm();
       })
       .catch(() => {

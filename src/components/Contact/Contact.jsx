@@ -1,29 +1,35 @@
 import { useDispatch } from "react-redux";
-import { deleteContact } from "../../redux/contactsOps";
+import { deleteContact, fetchContacts } from "../../redux/contacts/operations";
 import { FaUserFriends, FaPhoneAlt } from "react-icons/fa";
 import css from "./Contact.module.css";
 
-const Contact = ({ id, name, number }) => {
+const Contact = ({ contact }) => {
   const dispatch = useDispatch();
 
-  const onDelete = () => {
-    dispatch(deleteContact(id));
+  const handleDelete = (id) => {
+    dispatch(deleteContact(id))
+      .unwrap()
+      .then(() => {
+        dispatch(fetchContacts());
+      });
   };
 
   return (
     <div className={css.contactWrapper}>
-      <li>
-        <p className={css.userInfo}>
-          <FaUserFriends />
-          {name}
-        </p>
-        <p className={css.userInfo}>
-          <FaPhoneAlt />
-          {number}
-        </p>
-      </li>
+      <p className={css.userInfo}>
+        <FaUserFriends />
+        {contact.name}
+      </p>
+      <p className={css.userInfo}>
+        <FaPhoneAlt />
+        {contact.number}
+      </p>
 
-      <button className={css.button} type="button" onClick={onDelete}>
+      <button
+        onClick={() => handleDelete(contact.id)}
+        className={css.button}
+        type="button"
+      >
         Delete
       </button>
     </div>
